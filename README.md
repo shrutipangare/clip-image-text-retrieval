@@ -2,14 +2,14 @@
 
 A PyTorch implementation of Contrastive Language-Image Pre-training (CLIP) for multimodal learning, enabling semantic image search through natural language queries.
 
-## 🚀 Features
+##  Features
 
 - **Multi-Architecture Support**: Three different configurations with varying model complexities
 - **Contrastive Learning**: Learns joint representations of images and text in a shared embedding space
 - **Image Search**: Query images using natural language descriptions
 - **Comprehensive Evaluation**: Visual results and loss tracking across different model configurations
 
-## 📋 Model Configurations
+## Model Configurations
 
 | Configuration | Image Encoder | Text Encoder | Image Embedding | Text Embedding |
 |---------------|---------------|--------------|-----------------|----------------|
@@ -17,7 +17,7 @@ A PyTorch implementation of Contrastive Language-Image Pre-training (CLIP) for m
 | **Config 2** | ResNet-34 | BERT | 512 | 768 |
 | **Config 3** | ResNet-50 | RoBERTa | 2048 | 768 |
 
-## 🛠️ Installation
+##  Installation
 
 ```bash
 # Clone the repository
@@ -28,7 +28,7 @@ cd clip-image-text-retrieval
 pip install torch torchvision transformers timm opencv-python pandas albumentations matplotlib tqdm
 ```
 
-## 📊 Dataset
+## Dataset
 
 This implementation uses the **Flickr8k** dataset:
 - **Images**: 8,000 images from Flickr
@@ -42,7 +42,7 @@ kaggle datasets download -d adityajn105/flickr8k
 unzip flickr8k.zip
 ```
 
-## 🏗️ Architecture
+##  Architecture
 
 ### Image Encoder
 - **ResNet backbone** (18/34/50) with pretrained weights
@@ -96,7 +96,7 @@ find_matches(
 )
 ```
 
-## 📈 Results
+##  Results
 
 ### Training Performance
 
@@ -112,7 +112,7 @@ find_matches(
 - All models demonstrate effective image-text alignment for semantic search
 
 
-## 🔬 Technical Details
+##  Technical Details
 
 ### Hyperparameters
 - **Batch Size**: 32
