@@ -1,4 +1,4 @@
-# CLIP Image-Text Retrieval 🖼️📝
+# CLIP Image-Text Retrieval 
 
 A PyTorch implementation of Contrastive Language-Image Pre-training (CLIP) for multimodal learning, enabling semantic image search through natural language queries.
 
@@ -111,36 +111,6 @@ find_matches(
 - **ResNet-34 + BERT** provides the best balance between performance and stability
 - All models demonstrate effective image-text alignment for semantic search
 
-### Sample Queries
-- "A dog playing in a grassy field" 🐕
-- "People walking through a forest" 🌲
-- "A child smiling at the camera" 😊
-- "A cat sleeping on a windowsill" 🐱
-
-## 📁 Project Structure
-
-```
-clip-image-text-retrieval/
-├── notebooks/
-│   └── clip_implementation.ipynb
-├── src/
-│   ├── models/
-│   │   ├── clip_model.py
-│   │   ├── encoders.py
-│   │   └── projection.py
-│   ├── data/
-│   │   └── dataset.py
-│   ├── utils/
-│   │   ├── training.py
-│   │   └── evaluation.py
-│   └── config.py
-├── weights/
-│   ├── model_config1.pt
-│   ├── model_config2.pt
-│   └── model_config3.pt
-├── requirements.txt
-└── README.md
-```
 
 ## 🔬 Technical Details
 
@@ -156,47 +126,3 @@ clip-image-text-retrieval/
 - **Images**: Resize to 224×224, normalize to [-1, 1]
 - **Text**: Tokenization with padding and truncation
 - **Augmentation**: Resize and normalization using Albumentations
-
-## 🚧 Future Improvements
-
-- [ ] **Data Augmentation**: Advanced image transformations
-- [ ] **Architecture Variants**: Vision Transformer (ViT) encoders
-- [ ] **Larger Datasets**: MS-COCO, Conceptual Captions
-- [ ] **Zero-shot Classification**: Extend to classification tasks
-- [ ] **Optimization**: Mixed precision training, gradient accumulation
-
-## 📚 References
-
-- [Learning Transferable Visual Models From Natural Language Supervision](https://arxiv.org/abs/2103.00020)
-- [CLIP: Connecting Text and Images](https://openai.com/blog/clip/)
-- [Flickr8k Dataset](https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Flickr8k_Dataset.zip)
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👤 Author
-
-**Shruti Tulshidas Pangare** (stp8232)
-- 📧 Email: [your-email@example.com]
-- 🐙 GitHub: [@yourusername]
-
-## 🙏 Acknowledgments
-
-- OpenAI for the original CLIP paper and concept
-- PyTorch and Hugging Face communities for excellent tools
-- Flickr8k dataset contributors
-
----
-
-⭐ **If you found this project helpful, please give it a star!** ⭐
